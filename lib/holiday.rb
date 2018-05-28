@@ -60,7 +60,7 @@ def all_supplies_in_holidays(holiday_hash)
   #   Fourth Of July: Fireworks, BBQ
   # etc.
 
-
+binding.pry
   holiday_hash.each do |season, holidays_hash|
     holidays_hash.each do |holiday, supplies|
       formatted_holiday = holiday.split("_")
