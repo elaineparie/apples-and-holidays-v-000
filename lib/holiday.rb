@@ -44,7 +44,7 @@ holiday_hash[season] = {season => {
   holiday_name => supply_array}
 }
 
-
+holiday_hash
 end
 
 def all_winter_holiday_supplies(holiday_hash)
