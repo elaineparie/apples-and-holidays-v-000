@@ -63,16 +63,13 @@ def all_supplies_in_holidays(holiday_hash)
 
   holiday_hash.each do |season, holidays_hash|
     holidays_hash.each do |holiday, supplies|
+      holiday.delete!("_")
     puts "#{season.capitalize}:"
-    holiday.each_char? do |ch|
-      if ch = "_"
-        ch.gsub("_", " ")
     puts "  #{holiday}: " "#{supplies.join(", ")}"
-  end
-end
+        end
       end
     end
-  end
+
 
 
 def all_holidays_with_bbq(holiday_hash)
